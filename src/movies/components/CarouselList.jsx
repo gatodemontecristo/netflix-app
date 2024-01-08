@@ -13,6 +13,7 @@ export const CarouselList = () => {
     <div className="wrapper">
       {imagesCollectionFinal.map((properties, i) => (
         <CarouselSection
+        key={i}
           identifier={properties.identifier}
           after={properties.after}
           before={properties.before}

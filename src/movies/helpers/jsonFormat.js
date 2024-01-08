@@ -11,10 +11,6 @@ const genders = [
     {
         'section':3,
         'gender':"fantasy"
-    },
-    {
-        'section':4,
-        'gender':"fantasy"
     }
 ]
 
@@ -84,6 +80,7 @@ export const jsonFormat = () => {
     let imagesCollection = [];
     let imagesCollectionFinal = [];
     let object = {};
+    console.log("Lenght : " + genders.length);
     genders.forEach((properties, i) => {
         imagesCollection = images.slice(firstPart, lastPart);
         if(genders.length - 1 === i){
@@ -93,13 +90,17 @@ export const jsonFormat = () => {
                 before:`section${properties.gender}${i-1}`,
                 collection:imagesCollection
             }
-       }else if(genders.length === 0){
+            console.log("Primer IF");
+            console.log(object);
+       }else if(0 === i){
         object={
             identifier:`section${properties.gender}${i}`,
             after:`section${properties.gender}${i+1}`,
-            before:`section${properties.gender}${arr.length - 1}`,
+            before:`section${properties.gender}${genders.length - 1}`,
             collection:imagesCollection
         }
+        console.log("Segundo IF");
+        console.log(object);
        }else{
         object={
             identifier:`section${properties.gender}${i}`,
@@ -107,6 +108,8 @@ export const jsonFormat = () => {
             before:`section${properties.gender}${i-1}`,
             collection:imagesCollection
         }
+        console.log("Tercer IF");
+        console.log(object);
        }
        firstPart+=5;
        lastPart+=5;

@@ -1,7 +1,11 @@
-import React from 'react'
 
-export const CarouselItem = () => {
+export const CarouselItem = ({source,description}) => {
   return (
-    <div>CarouselItem</div>
+    <div className="item">
+        <img
+          src={source}
+          alt={description}
+        ></img>
+      </div>
   )
 }
