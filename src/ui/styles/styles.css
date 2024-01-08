@@ -1,0 +1,73 @@
+.menuBarra{
+    background-color: #141414;
+}
+
+
+.menuLogoImg{
+    width: 100%;
+}
+.menuLogo{
+    width: 120px;
+    margin-right: 60px;
+}
+
+.menuContenedor{
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        align-items: center;
+}
+.menuItem{
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    margin-right: 10px;
+    margin-left: 10px;
+}   
+
+.menuAvatar{
+    width: 60px;
+   
+}
+.menuAvatarImg{
+    width: 100%;
+    border-radius: 10%;
+}
+
+
+
+.menuData{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    color: white;
+    gap: 15px;
+    font-size: 15px;
+}
+.menuData p{
+    margin-bottom: 0;
+}
+.myIconSearch{
+    font-size: 15px; 
+    color: rgb(255, 255, 255);
+}
+.myIconBell{
+    font-size: 20px; 
+    color: rgb(255, 255, 255);
+}
+
+.mySearchSection{
+    border: 1px solid white;
+    width: 200px !important;
+}
+.mySearchSection .mySearchButton{
+    background-color: #141414;
+    border-radius: 0;
+    border: none;
+}
+.mySearchSection .mySearchInput{
+    background-color: #141414;
+    border-radius: 0;
+    border: none;
+}
