@@ -1,0 +1,75 @@
+
+/* 872585 */
+.bannerImage {
+    position: relative;
+    background-image: url("../../../public/banner.jpg");
+    background-size: 100%;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    box-shadow: -8px -100px 48px -31px #141414  inset;
+  }
+  .bannerFondo {
+    visibility: hidden;
+    width: 100%;
+  }
+  .bannerDescription {
+    width: 25%;
+    position: absolute;
+    text-align: left;
+    z-index: 5;
+    top: 40%;
+    margin-left: 40px;
+  }
+  .bannerDescription p{
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+  .bannerDescription h1{
+    text-align: left;
+    color: white;
+  }
+  .bannerDescription button{
+    margin-right: 15px;
+    font-size: 20px;
+  }
+  .bannerExtra {
+    position: absolute;
+    text-align: left;
+    z-index: 5;
+    top: 60%;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+  .bannerExtra p{
+    color: white;
+  }
+  .bannerExtra .bannerVolumen{
+    border:  1px solid  white;
+    padding-right: 5px;
+    padding-left: 5px;
+    border-radius: 50%;
+  }
+  .bannerExtra .bannerVolumen p{
+    font-size: 25px;
+    margin-bottom: 0;
+  }
+
+  .bannerExtra .bannerAge{
+    border-left:  4px solid  white;
+  background-color: rgba(51,51,51,.6);
+  }
+  .bannerExtra .bannerAge p{
+   
+    margin-left: 10px;
+    margin-right: 70px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    font-size: 20px;
+  }

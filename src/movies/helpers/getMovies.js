@@ -1,21 +1,27 @@
 import { getHeaders } from "../../getHeaders";
 
-export const getMovies = async (genre) => {
-    const {REACT_APP_API_HOST,REACT_APP_API_KEY} = getHeaders();
-    const url = `https://netflix99.p.rapidapi.com/v1/list/titles?country=US&language=en&genre=${genre}&order=Popularity&title_type=Movies`;
+export const getMovies = async (type) => {
+    const {REACT_APP_API_KEY} = getHeaders();
+    const url = `https://api.themoviedb.org/3/movie/${type}?language=en-US&page=1`;
     const options = {
         method: 'GET',
         headers: {
-            'X-RapidAPI-Key': REACT_APP_API_KEY,
-            'X-RapidAPI-Host': REACT_APP_API_HOST
+            'accept': 'application/json',
+            'Authorization': REACT_APP_API_KEY
         }
     };
     
     try {
         const response = await fetch(url, options);
-        const result = await response.json();
-        console.log(result);
-        return result;
+        const {results} = await response.json();
+
+        const galery = results.map((movie) => ({
+            original_title: movie.original_title,
+            backdrop_path: "https://image.tmdb.org/t/p/w300/"+movie.backdrop_path,
+            id: movie.id
+          }));
+
+        return galery;
     } catch (error) {
         console.error(error);
         return [];

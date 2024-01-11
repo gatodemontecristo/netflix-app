@@ -1,4 +1,3 @@
-import "../styles/netflixCarousel.scss";
 import { CarouselItem } from "./CarouselItem";
 
 
@@ -12,9 +11,9 @@ export const CarouselSection = ({identifier,after,before,collection}) => {
       {
         collection.map((properties, i) => (
           <CarouselItem
-          key={i}
-          source={properties.src}
-          description={properties.alt}
+          key={properties.id}
+          source={properties.backdrop_path}
+          description={properties.original_title}
           ></CarouselItem>
         ))
       }

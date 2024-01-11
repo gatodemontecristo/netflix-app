@@ -5,9 +5,8 @@ export const MoviesRoutes = () => {
   return (
     <>
       <NavaBar></NavaBar>
-      <div className="container">
+     
         <Outlet></Outlet>
-      </div>
     </>
   );
 };
