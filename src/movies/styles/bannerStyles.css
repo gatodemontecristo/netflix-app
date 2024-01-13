@@ -2,7 +2,7 @@
 /* 872585 */
 .bannerImage {
     position: relative;
-    background-image: url("../../../public/banner.jpg");
+    /* background-image: url("../../../public/banner.jpg"); */
     background-size: 100%;
     background-position: center center;
     background-size: cover;
@@ -15,7 +15,7 @@
     width: 100%;
   }
   .bannerDescription {
-    width: 25%;
+    width: 35%;
     position: absolute;
     text-align: left;
     z-index: 5;

@@ -3,7 +3,7 @@ import { getMovies } from "../helpers";
 
 
 export const useFetchMovies = (type) => {
-    const [movies, setmovies] = useState([]);
+    const [list, setmovies] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
 
     const getMoviesList = async () => {
@@ -17,7 +17,7 @@ export const useFetchMovies = (type) => {
       }, []);
 
       return {
-        movies,
+        list,
         isLoading
       }
 

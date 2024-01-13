@@ -17,10 +17,10 @@ function NavaBar() {
           </div>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <NavLink className="menuItem" to="/movies">
+              <NavLink className="menuItem" to="/movies" replace>
                 Movies
               </NavLink>
-              <NavLink className="menuItem" to="/movies">
+              <NavLink className="menuItem" to="/series" replace>
                 Series
               </NavLink>
               <NavLink className="menuItem" to="/movies">

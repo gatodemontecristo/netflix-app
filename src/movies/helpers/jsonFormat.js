@@ -3,7 +3,7 @@
 
 
 
-export const jsonFormat = (galery,type) => {
+export const jsonFormat = (galery,type,category) => {
     const genders = [
         {
             'section':1,
@@ -27,23 +27,23 @@ export const jsonFormat = (galery,type) => {
         imagesCollection = galery.slice(firstPart, lastPart);
         if(genders.length - 1 === i){
             object={
-                identifier:`section${properties.gender}${i}`,
-                after:`section${properties.gender}0`,
-                before:`section${properties.gender}${i-1}`,
+                identifier:`section${category}${properties.gender}${i}`,
+                after:`section${category}${properties.gender}0`,
+                before:`section${category}${properties.gender}${i-1}`,
                 collection:imagesCollection
             }
        }else if(0 === i){
         object={
-            identifier:`section${properties.gender}${i}`,
-            after:`section${properties.gender}${i+1}`,
-            before:`section${properties.gender}${genders.length - 1}`,
+            identifier:`section${category}${properties.gender}${i}`,
+            after:`section${category}${properties.gender}${i+1}`,
+            before:`section${category}${properties.gender}${genders.length - 1}`,
             collection:imagesCollection
         }
        }else{
         object={
-            identifier:`section${properties.gender}${i}`,
-            after:`section${properties.gender}${i+1}`,
-            before:`section${properties.gender}${i-1}`,
+            identifier:`section${category}${properties.gender}${i}`,
+            after:`section${category}${properties.gender}${i+1}`,
+            before:`section${category}${properties.gender}${i-1}`,
             collection:imagesCollection
         }
        }

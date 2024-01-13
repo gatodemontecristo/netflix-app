@@ -1,3 +1,5 @@
 export * from './getMovies'
 export * from './jsonFormat'
 export * from './getMovieDetail'
+export * from './getTVSerieDetail'
+export * from './getTVSeries'
