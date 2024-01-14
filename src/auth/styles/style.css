@@ -1,0 +1,76 @@
+.loginBackground {
+    position: relative;
+     background-image: url("../../../public/login.jpg"); 
+    background-size: 100%;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    box-shadow: -8px -100px 48px -31px #141414  inset;
+  }
+  .loginImage {
+    visibility: hidden;
+    width: 100%;
+  }
+
+  .loginCard {
+    width: 40%;
+    position: absolute;
+    text-align: center;
+    z-index: 5;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #000000cc;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #747474;
+    font-size: 18px;
+}
+.loginCard .loginForm{
+    width: 60%;
+    margin-left: auto ;
+    margin-right: auto ;
+}
+.loginCard h1{
+    color: white;
+    text-align: start;
+    margin-bottom: 20px;
+} 
+.loginDontRemember{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 70px;
+}
+.loginCard input{
+    margin-bottom: 20px;
+    padding: 10px;
+}
+.loginCard  #flexCheckDefault{
+    margin: 0;
+    margin-right: 5px;
+}
+.loginCard #loginSummit{
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+
+.loginCard .loginSignUp{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.loginCard #loginCaptcha{
+    text-align: left;
+    font-size: 15px;
+}
+
+.loginCard .btnLinkFormat{
+text-decoration: none;
+color: white;
+font-weight: 500;
+}

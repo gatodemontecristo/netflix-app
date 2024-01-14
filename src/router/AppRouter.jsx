@@ -1,5 +1,6 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { ChildMoviesRoutes, MoviesRoutes } from "../movies";
+import { LoginPage } from "../auth/pages/LoginPage";
 
 
 const router = createBrowserRouter([
@@ -7,6 +8,10 @@ const router = createBrowserRouter([
     path: "/",
     element: <MoviesRoutes />,
     children: ChildMoviesRoutes,
+  },
+  {
+    path: "/login",
+    element: <LoginPage />
   },
 ]);
 
