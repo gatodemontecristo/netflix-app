@@ -1,20 +1,32 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { ChildMoviesRoutes, MoviesRoutes } from "../movies";
-import { LoginPage } from "../auth/pages/LoginPage";
-
+import { LoginPage } from "../auth";
+import { PrivateRoute } from "./PrivateRoute";
+import { PublicRoute } from "./PublicRoute";
 
 const router = createBrowserRouter([
   {
-    path: "/",
-    element: <MoviesRoutes />,
-    children: ChildMoviesRoutes,
+    path: "/login",
+    element: 
+      <PublicRoute>
+        <LoginPage />
+      </PublicRoute>
   },
   {
-    path: "/login",
-    element: <LoginPage />
-  },
+    path: "/",
+    element: 
+      <PrivateRoute>
+        <MoviesRoutes />
+      </PrivateRoute>
+    ,
+    children: ChildMoviesRoutes,
+  }
 ]);
 
 export const AppRouter = () => {
-  return <RouterProvider router={router} />;
+  return (
+    <>
+      <RouterProvider router={router} />
+    </>
+  );
 };

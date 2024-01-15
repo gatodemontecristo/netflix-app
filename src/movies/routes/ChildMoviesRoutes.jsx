@@ -5,7 +5,7 @@ import { LoginPage } from "../../auth/pages/LoginPage";
 
 export const ChildMoviesRoutes = [
   { path: "movies", element: <MoviesGallery /> },
-  { path: "series", element: <TVSeriesGallery /> }, 
+  { path: "series", element: <TVSeriesGallery /> },
   { path: "/*", element: <Navigate to="/movies" /> },
   { path: "/", element: <Navigate to="/movies" /> },
 ];
