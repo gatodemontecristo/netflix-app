@@ -25,6 +25,8 @@ export const getMovieDetail = async (movie_id) => {
             status: movie.status,
             tagline: movie.tagline,
             title: movie.title,
+            vote_average: movie.vote_average,
+            vote_count: movie.vote_count,
         }
         return obj;
     } catch (error) {
