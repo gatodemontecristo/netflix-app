@@ -27,6 +27,13 @@ export const getMovieDetail = async (movie_id) => {
             title: movie.title,
             vote_average: movie.vote_average,
             vote_count: movie.vote_count,
+            runtime: movie.runtime,
+            original_language:movie.original_language,
+            budget:movie.budget,
+            popularity:movie.popularity,
+            production_countries:movie.production_countries,
+            spoken_languages:movie.spoken_languages
+
         }
         return obj;
     } catch (error) {

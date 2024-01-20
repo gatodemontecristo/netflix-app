@@ -1,0 +1,118 @@
+.movieAll{
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+.movieInfoTitle{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.movieInfoTitle h1{
+    color: white;
+    font-size: 35px;
+}
+
+
+ .moviePrimaryButton {
+    background-color: #141414 !important;
+    color: white !important;
+    border: solid 2px rgb(65, 65, 65) !important;
+    margin-left: 7px;
+}
+.movieLine{
+    border-color:white;
+    width: 100%;
+}
+
+.movieInfoSubTitle{
+    display: flex;
+    flex-direction: row;
+}
+.movieCard{
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
+
+.movieCard .movieImageInfo{
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
+    gap: 10px;
+}
+.movieCard .movieImageInfo .movieEspecialButton{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.redHeart{
+    color: rgba(255, 0, 0, 0.645);
+}
+.movieCard .movieDetailInfo{
+    width: 100%;
+}
+.movieCard .movieDetailInfo  .movieInfoSubTitle{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.movieCard .movieDetailInfo  .movieInfoSubTitle button{
+    padding: 2px;
+}
+.movieCard .movieDetailInfo  .movieInfoSubTitle h1{
+    font-size: 30px;
+    margin: 0;
+    margin-right: 10px;
+}
+
+.movieCard .movieDetailInfo .movieInfoText{
+    margin-top: 10px;
+    color: rgb(133, 133, 133);
+}
+.movieCard .movieDetailInfo .movieInfoCharacteristics h1{
+    font-size: 30px;
+    margin: 0;
+    margin-bottom: 10px;
+    color: white;
+    text-align: start;
+}
+.movieCard .movieDetailInfo .movieInfoCharacteristics{
+    color: rgb(133, 133, 133);
+}
+
+.movieDetailInfo .movieSecondaryDetails{
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+}
+.movieDetailInfo .movieSecondaryDetails .movieStars{
+    display: flex;
+    flex-direction: row;
+    gap:1px;
+}
+.movieDetailInfo .movieSecondaryDetails .movieSecondaryDetailsExtra{
+    display: flex;
+    flex-direction: row;
+    gap:5px;
+}
+
+.movieCard .movieDetailInfo .movieAditionalDetails h1{
+    font-size: 30px;
+    margin: 0;
+    margin-bottom: 10px;
+    color: white;
+    text-align: start;
+}
+.movieCard .movieDetailInfo .movieAditionalDetails p{
+    margin:0;
+}
+.movieCard .movieDetailInfo .movieAditionalDetails{
+    margin-bottom: 20px;
+}
+
+.movieCard .movieDetailInfo .movieAditionalDetails span{
+    margin-left: 20px;
+    color: rgb(133, 133, 133);
+}
