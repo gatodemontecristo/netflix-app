@@ -116,3 +116,19 @@
     margin-left: 20px;
     color: rgb(133, 133, 133);
 }
+
+.movieBack{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.movieBack h2{
+    color: white;
+    font-size: 20px;
+    margin: 0;
+}
+.movieBack .mySearchLogOut {
+    background-color: #141414 !important;
+}

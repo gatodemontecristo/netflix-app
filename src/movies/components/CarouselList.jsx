@@ -3,13 +3,10 @@ import "../styles/netflixCarousel.scss";
 import { CarouselSection } from "./CarouselSection";
 
 export const CarouselList = ({ title, type,category,onListMethod }) => {
-  // const [firstPart, setfirstPart] = useState(0);
-  // const [lastPart, setlastPart] = useState(4);
 
   const { list, isLoading } = onListMethod(type);
   const imagesCollectionFinal = jsonFormat(list, type,category);
 
-  //const moviesList = getMovieMedia("Animation");
 
   return (
     <>
