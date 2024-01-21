@@ -1,0 +1,134 @@
+.serieAll{
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+.serieInfoTitle{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.serieInfoTitle h1{
+    color: white;
+    font-size: 35px;
+}
+
+
+ .seriePrimaryButton {
+    background-color: #141414 !important;
+    color: white !important;
+    border: solid 2px rgb(65, 65, 65) !important;
+    margin-left: 7px;
+}
+.serieLine{
+    border-color:white;
+    width: 100%;
+}
+
+.serieInfoSubTitle{
+    display: flex;
+    flex-direction: row;
+}
+.serieCard{
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
+
+.serieCard .serieImageInfo{
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
+    gap: 10px;
+}
+.serieCard .serieImageInfo .serieEspecialButton{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.redHeart{
+    color: rgba(255, 0, 0, 0.645);
+}
+.serieCard .serieDetailInfo{
+    width: 100%;
+}
+.serieCard .serieDetailInfo  .serieInfoSubTitle{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.serieCard .serieDetailInfo  .serieInfoSubTitle button{
+    padding: 2px;
+}
+.serieCard .serieDetailInfo  .serieInfoSubTitle h1{
+    font-size: 30px;
+    margin: 0;
+    margin-right: 10px;
+}
+
+.serieCard .serieDetailInfo .serieInfoText{
+    margin-top: 10px;
+    color: rgb(133, 133, 133);
+}
+.serieCard .serieDetailInfo .serieInfoCharacteristics h1{
+    font-size: 30px;
+    margin: 0;
+    margin-bottom: 10px;
+    color: white;
+    text-align: start;
+}
+.serieCard .serieDetailInfo .serieInfoCharacteristics{
+    color: rgb(133, 133, 133);
+}
+
+.serieDetailInfo .serieSecondaryDetails{
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+}
+.serieDetailInfo .serieSecondaryDetails .serieStars{
+    display: flex;
+    flex-direction: row;
+    gap:1px;
+}
+.serieDetailInfo .serieSecondaryDetails .serieSecondaryDetailsExtra{
+    display: flex;
+    flex-direction: row;
+    gap:5px;
+}
+
+.serieCard .serieDetailInfo .serieAditionalDetails h1{
+    font-size: 30px;
+    margin: 0;
+    margin-bottom: 10px;
+    color: white;
+    text-align: start;
+}
+.serieCard .serieDetailInfo .serieAditionalDetails p{
+    margin:0;
+}
+.serieCard .serieDetailInfo .serieAditionalDetails{
+    margin-bottom: 20px;
+}
+
+.serieCard .serieDetailInfo .serieAditionalDetails span{
+    margin-left: 20px;
+    color: rgb(133, 133, 133);
+}
+
+.serieBack{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.serieBack h2{
+    color: white;
+    font-size: 20px;
+    margin: 0;
+}
+.serieBack .mySearchLogOut {
+    background-color: #141414 !important;
+}

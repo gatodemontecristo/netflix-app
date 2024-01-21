@@ -23,6 +23,7 @@ export const CarouselList = ({ title, type,category,onListMethod }) => {
                 after={properties.after}
                 before={properties.before}
                 collection={properties.collection}
+                category={category}
               ></CarouselSection>
             ))}
           </div>

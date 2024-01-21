@@ -21,10 +21,26 @@ export const getTVSerieDetail = async (movie_id) => {
             original_title: movie.original_name,
             overview: movie.overview,
             production_companies:movie.production_companies,
+            first_air_date:movie.first_air_date,
             last_air_date:movie.last_air_date,
             status: movie.status,
             tagline: movie.tagline,
             title: movie.name,
+            created_by:movie.created_by,
+            languages:movie.languages,
+            last_episode_to_air:movie.last_episode_to_air,
+            
+
+            number_of_episodes:movie.number_of_episodes,
+            number_of_seasons:movie.number_of_seasons,
+            origin_country:movie.origin_country,
+            popularity:movie.popularity,
+            production_countries:movie.production_countries,
+            spoken_languages:movie.spoken_languages,
+            tagline:movie.tagline,
+            type:movie.type,
+            vote_average:movie.vote_average,
+            vote_count:movie.vote_count,
         }
         return obj;
     } catch (error) {

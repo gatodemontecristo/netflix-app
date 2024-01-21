@@ -1,7 +1,7 @@
 import { CarouselItem } from "./CarouselItem";
 
 
-export const CarouselSection = ({identifier,after,before,collection}) => {
+export const CarouselSection = ({identifier,after,before,collection,category}) => {
 
   return (
     <section id={identifier}>
@@ -15,6 +15,7 @@ export const CarouselSection = ({identifier,after,before,collection}) => {
           identifier={properties.id}
           source={properties.backdrop_path}
           description={properties.original_title}
+          category={category}
           ></CarouselItem>
         ))
       }
