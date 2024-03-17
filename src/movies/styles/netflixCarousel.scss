@@ -1,3 +1,6 @@
+@import "../../sass/responsiveStyles";
+
+
 $itemGrow: 1.2;
 $duration: 250ms;
 
@@ -15,8 +18,14 @@ h1 {
   text-align: center;
 }
 .carruselTitle{
-  font-size: 22px;
+  
   color: #fff;
+  @include tablet {
+    font-size: 17px;
+  }
+  @include desktop {
+    font-size: 22px;
+  }
 }
 
 .wrapper {
@@ -31,17 +40,34 @@ h1 {
     display: grid;
     grid-template-columns: repeat(5, auto);
     margin-top: 0;
-    margin-bottom: 40px;
+    
     margin-left: 0;
     margin-right: 0;
-    
+    @include tablet {
+      margin-bottom: 15px;
+    }
+    @include desktop {
+      margin-bottom: 40px;
+    }
     .item {
       padding: 0 2px;
       transition: $duration all;
       
       &:hover { 
-        margin: 0 40px;
-        transform: scale(1.2);
+        
+        @include tablet {
+          margin: 0 10px;
+          transform: scale(1.5);
+          -webkit-transform: scale(1.5);
+          -moz-transform: scale(1.5);
+          -ms-transform: scale(1.5);
+          -o-transform: scale(1.5);
+}
+        @include desktop {
+          margin: 0 40px;
+          transform: scale(1.2);
+        }
+        
       }
       &:hover .title {
         opacity: 1;        
@@ -53,19 +79,41 @@ h1 {
       position: absolute;
       color: #fff;
       text-decoration: none;
-      font-size: 6em;
+     
       background:rgb(0,0,0);
-      width: 80px;
-      padding: 20px;
+      
+      
       text-align: center;
       z-index: 1;
+      @include tablet {
+        padding: 0px;
+        font-size: 3.5em;
+        width: 35px;
+      }
+      @include desktop {
+        padding: 20px;
+        font-size: 6em;
+        width: 80px;
+      }
       
       &:nth-of-type(1) {
-        top:0; bottom:0; left:0;
+        bottom:0; left:0;
+        @include tablet {
+          top:-10px;
+        }
+        @include desktop {
+          top:0;
+        }
         background: linear-gradient(-90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
       }
       &:nth-of-type(2) {
-        top:0; bottom:0; right: 0;
+       bottom:0; right: 0;
+        @include tablet {
+          top:-10px;
+        }
+        @include desktop {
+          top:0;
+        }
         background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
       }
       
@@ -77,7 +125,7 @@ h1 {
 // Remove the arrow for Mobile
 @media only screen and (max-width: 600px) {
   a.arrow__btn {
-    display:none;
+    // display:none;
   }
 }
 
@@ -90,6 +138,12 @@ h1 {
 .itemImg {
   width: 100%;
   display: block;
+  @include tablet {
+    height: 80px;
+  }
+  @include desktop {
+   height: auto;
+  }
 }
 
 .title {
@@ -101,12 +155,22 @@ coincides with container's bottom margin*/
   bottom: 10px;            
   color: white;
   width: 100%;
-  font-size: 20px;
-  padding: 15px 0;
+  
+ 
   text-align: center;
   /*invisible because opacity is 0*/
   opacity: 0;            
   transition: 0.6s;
+  @include tablet {
+    font-size: 15px;
+    padding: 0px 0;
+    line-height: 15px;
+  }
+  @include desktop {
+    font-size: 20px;
+    padding: 15px 0;
+    line-height: normal;
+  }
 }
 
 // .container:hover .title {

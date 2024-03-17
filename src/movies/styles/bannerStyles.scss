@@ -1,4 +1,4 @@
-
+@import "../../sass/responsiveStyles";
 /* 872585 */
 .bannerImage {
     position: relative;
@@ -9,32 +9,70 @@
     background-repeat: no-repeat;
     overflow: hidden;
     box-shadow: -8px -100px 48px -31px #141414  inset;
+    @include tablet {
+      height: 650px;
+    }
+    @include desktop {
+      height: auto;
+    }
   }
   .bannerFondo {
     visibility: hidden;
     width: 100%;
   }
   .bannerDescription {
-    width: 35%;
+   
     position: absolute;
     text-align: left;
     z-index: 5;
-    top: 40%;
-    margin-left: 40px;
+    
+   
+    @include tablet {
+      margin-left: 20px;
+      top: 50%;
+      width: 45%;
+    }
+    @include desktop {
+      margin-left: 40px;
+      top: 40%;
+      width: 35%;
+    }
   }
   .bannerDescription p{
     color: white;
-    font-size: 17px;
     font-weight: 500;
     margin-bottom: 20px;
+    @include tablet {
+      font-size: 14px;
+    }
+    @include desktop {
+      font-size: 17px;
+    }
   }
   .bannerDescription h1{
     text-align: left;
     color: white;
+    font-weight: bold;
+    @include tablet {
+      font-size: 30px;
+    }
+    @include desktop {
+      font-size: 50px;
+    }
   }
+ 
   .bannerDescription button{
     margin-right: 15px;
-    font-size: 20px;
+    @include tablet {
+      font-size: 14px;
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+    @include desktop {
+      font-size: 20px;
+      padding: 10px;
+      margin-bottom: 0px;
+    }
   }
   .bannerExtra {
     position: absolute;
@@ -57,8 +95,14 @@
     border-radius: 50%;
   }
   .bannerExtra .bannerVolumen p{
-    font-size: 25px;
+    
     margin-bottom: 0;
+    @include tablet {
+      font-size: 20px;
+    }
+    @include desktop {
+      font-size: 25px;
+    }
   }
 
   .bannerExtra .bannerAge{
@@ -68,8 +112,19 @@
   .bannerExtra .bannerAge p{
    
     margin-left: 10px;
-    margin-right: 70px;
-    margin-bottom: 5px;
-    margin-top: 5px;
-    font-size: 20px;
+    
+   
+    
+    @include tablet {
+      margin-right: 40px;
+      font-size: 15px;
+      margin-bottom: 5px;
+      margin-top: 5px;
+    }
+    @include desktop {
+      margin-right: 70px;
+      font-size: 20px;
+      margin-bottom: 5px;
+      margin-top: 5px;
+    }
   }

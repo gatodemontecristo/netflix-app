@@ -1,0 +1,11 @@
+@import "../../sass/responsiveStyles";
+
+.containerGeneral{
+    margin-bottom: 60px;
+   @include tablet {
+    margin-top: 10px;
+  }
+  @include desktop {
+    margin-top: 40px;
+  }
+}

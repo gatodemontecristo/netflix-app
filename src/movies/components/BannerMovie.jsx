@@ -1,4 +1,4 @@
-import "../styles/bannerStyles.css";
+import "../styles/bannerStyles.scss";
 import "../styles/spinnerStyles.css";
 
 export const BannerMovie = ({ id_movie, page, onDetailMethod }) => {
