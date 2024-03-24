@@ -4,7 +4,7 @@ import Form from "react-bootstrap/Form";
 import InputGroup from "react-bootstrap/InputGroup";
 import { NavLink, useNavigate } from "react-router-dom";
 import Container from "react-bootstrap/Container";
-import "../styles/styles.css";
+import "../styles/styles.scss";
 import { useContext } from "react";
 import { AuthContext } from "../../auth/context";
 
@@ -37,10 +37,29 @@ function NavaBar() {
               <NavLink className="menuItem" to="/movies">
                 Popular News
               </NavLink>
+              <InputGroup className="myPrincipalPhone">
+                <InputGroup.Text id="basic-addon1" className="mySearchButton">
+                  <i className="bi bi-search myIconSearch"></i>
+                </InputGroup.Text>
+                <Form.Control
+                  className="mySearchInput"
+                  placeholder="Search"
+                  aria-label="Search"
+                  aria-describedby="basic-addon1"
+                />
+              </InputGroup>
+              <p className="myPrincipalPhone">
+                <i className="bi bi-bell myIconBell"></i>
+              </p>
+              <button
+                type="button"
+                className="btn btn-dark mySearchLogOut myPrincipalPhone"
+                onClick={onLogout}
+              ></button>
             </Nav>
           </Navbar.Collapse>
           <div className="menuData">
-            <InputGroup className="mySearchSection">
+            <InputGroup className="mySearchSection myPrincipalDeskop">
               <InputGroup.Text id="basic-addon1" className="mySearchButton">
                 <i className="bi bi-search myIconSearch"></i>
               </InputGroup.Text>
@@ -53,12 +72,12 @@ function NavaBar() {
             </InputGroup>
 
             <p>{user.name}</p>
-            <p>
+            <p className="myPrincipalDeskop">
               <i className="bi bi-bell myIconBell"></i>
             </p>
             <button
               type="button"
-              className="btn btn-dark mySearchLogOut"
+              className="myPrincipalDeskop btn btn-dark mySearchLogOut "
               onClick={onLogout}
             >
               <i className="bi bi-door-open-fill"></i>

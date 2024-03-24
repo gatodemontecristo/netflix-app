@@ -1,3 +1,4 @@
+@import "../../sass/responsiveStyles";
 .menuBarra{
     background-color: #141414;
 }
@@ -8,7 +9,13 @@
 }
 .menuLogo{
     width: 120px;
-    margin-right: 60px;
+   
+    @include tablet {
+        margin-right: 0px;
+      }
+      @include desktop {
+        margin-right: 60px;
+      }
 }
 
 .menuContenedor{
@@ -42,8 +49,16 @@
     text-align: center;
     align-items: center;
     color: white;
-    gap: 15px;
-    font-size: 15px;
+   
+    
+    @include tablet {
+        gap: 10px;
+        font-size: 13px;
+      }
+      @include desktop {
+        gap: 15px;
+        font-size: 15px;
+      }
 }
 .menuData p{
     margin-bottom: 0;
@@ -74,4 +89,22 @@
 
 .mySearchLogOut {
     background-color: #141414 !important;
+}
+
+
+.myPrincipalDeskop{
+    @include tablet {
+        display: none !important;
+      }
+      @include desktop {
+        display: block;
+      }
+}
+.myPrincipalPhone{
+    @include tablet {
+        display: block;
+      }
+      @include desktop {
+        display: none !important;
+      }
 }

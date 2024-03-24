@@ -1,5 +1,5 @@
 import { Navigate, useParams } from "react-router-dom";
-import "../styles/detailStyles2.css";
+import "../styles/detailStyles2.scss";
 import "../styles/spinnerStyles.css";
 import { useFetchTVSerieDetail, useTVSerieDetail } from "../hooks";
 
@@ -30,15 +30,15 @@ export const TVSeriesInfoCard = () => {
             </h1>
             <div className="serieButtonCollection  animate__animated animate__fadeIn">
               <button type="button" className="btn btn-secondary">
-                IMDb {numberTwoDecimals(movie.vote_average)}
+                IMDb <span className="serieTextButton">{numberTwoDecimals(movie.vote_average)}</span>
               </button>
               <button type="button" className="btn btn-light seriePrimaryButton">
                 {" "}
-                <i className="bi bi-heart-fill redHeart"></i> Watch Later
+                <i className="bi bi-heart-fill redHeart"></i> <span className="serieTextButton">Watch Later</span>
               </button>
               <button type="button" className="btn btn-light seriePrimaryButton">
                 {" "}
-                <i className="bi bi-people-fill"></i> Invite Friends
+                <i className="bi bi-people-fill"></i> <span className="serieTextButton">Invite Friends</span>
               </button>
             </div>
           </div>
