@@ -1,6 +1,6 @@
 import { Navigate, useParams } from "react-router-dom";
 import { useFetchMovieDetail } from "../hooks/useFetchMovieDetail";
-import "../styles/detailStyles.css";
+import "../styles/detailStyles.scss";
 import "../styles/spinnerStyles.css";
 import { useMovieDetail } from "../hooks";
 
@@ -32,15 +32,15 @@ export const MovieInfoCard = () => {
             </h1>
             <div className="movieButtonCollection  animate__animated animate__fadeIn">
               <button type="button" className="btn btn-secondary">
-                IMDb {numberTwoDecimals(movie.vote_average)}
+              IMDb <span className="movieTextButton">{numberTwoDecimals(movie.vote_average)}</span>
               </button>
               <button type="button" className="btn btn-light moviePrimaryButton">
                 {" "}
-                <i className="bi bi-heart-fill redHeart"></i> Watch Later
+                <i className="bi bi-heart-fill redHeart"></i> <span className="movieTextButton">Watch Later</span>
               </button>
               <button type="button" className="btn btn-light moviePrimaryButton">
                 {" "}
-                <i className="bi bi-people-fill"></i> Invite Friends
+                <i className="bi bi-people-fill"></i> <span className="movieTextButton">Invite Friends</span>
               </button>
             </div>
           </div>
